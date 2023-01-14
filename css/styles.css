@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Aware Bold';
+    src:  url('../assets/fonts/AwareBold.ttf') format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+:root{
+  --background-color:           #bac1fc;
+  --form-color:                 #2d396bda;
+  --heading-color-primary:      #515c9a;
+  --color-primary:              #a4aad4;
+  --color-secondary:            #616eb7;
+  --color-tertiary:             #bac1fc;
+}
+
+body{
+  font-family: Arial, Helvetica;
+  background-color: var(--background-color);
+
+  /* IMAGE BY:
+  https://pixabay.com/users/placidplace-25572496/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7231560
+  */
+  background-image: url(../assets/images/background.avif),
+
+   linear-gradient(70deg, var(--color-secondary), var(--background-color) 70%, var(--color-secondary));
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+
+  color: var(--color-primary);
+}
+
+#survey-form{
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 0.7em;
+  background-color: var(--form-color);
+  padding: 1em;
+  border-radius: 0.8em;
+}
+
+header{
+  text-align: center;
+  min-width: 300px;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+header h1{
+    /* text-transform: uppercase; */
+    font-family: "Aware Bold", Arial, Helvetica, sans-serif;
+}
+
+#title{
+  margin-bottom: 0;
+  color: var(--heading-color-primary);
+}
+
+#description{
+  font-size: 16;
+  margin-top: 0;
+  color: var(--color-secondary);
+}
+
+input, select{
+  width: 100%;
+  margin: 4px 0;
+  min-height: 2em;
+}
+
+/* Disables the default inline behavior to allow us to stack radios and checkboxes vertically */
+label{
+  margin-top: 1em;
+  display: block;
+}
+
+/* The width must be unset, and the vertical-align attribute must have middle as the value or it won't function properly */
+input[type="radio"]{
+  width: unset;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]{
+  width: unset;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+fieldset{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset label{
+  margin-top: 0;
+}
+
+.user-credentials label{
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+  min-width: 100%;
+  min-height: 9em;
+  font-size: 0.9rem;
+}
+
+#submit{
+  margin: 2em 0;
+  margin-top: 1em;
+  padding: 0.3em;
+  min-width: 100%;
+  border: none;
+  border-radius: 0.4em;
+
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  
+  background-color: var(--color-secondary);
+  color: white;
+
+  transition: letter-spacing 250ms;
+}
+
+fieldset label:not(.user-credentials label){
+    transition: letter-spacing 250ms;
+}
+
+fieldset label:hover:not(.user-credentials label){
+  letter-spacing: 2px;
+}
+
+#submit:hover,
+#submit:focus{
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
