@@ -15,7 +15,7 @@ An example survey form about the field of Artificial Intelligence. Built solely 
 
 ### Screenshot
 
-![Page Screenshot](/assets/images/artificial-intelligence-survey-preview.avif, /assets/images/artificial-intelligence-survey-preview.avif.jpg)
+![Page Screenshot](/assets/images/artificial-intelligence-survey-preview.avif)
 
 ### Links
 
