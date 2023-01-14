@@ -24,7 +24,7 @@ body{
   https://pixabay.com/users/placidplace-25572496/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7231560
   */
   background-image: url(../assets/images/background.avif),
-
+  url(../assets/images/background.jpg),
    linear-gradient(70deg, var(--color-secondary), var(--background-color) 70%, var(--color-secondary));
   background-repeat: repeat;
   background-size: cover;

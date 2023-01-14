@@ -19,7 +19,7 @@ An example survey form about the field of Artificial Intelligence. Built solely 
 
 ### Links
 
-- Live Site URL: [Github Pages](#)
+- Live Site URL: [Github Pages](https://kyr27.github.io/artificial-intelligence-survey-example/)
 
 ## My process
 
